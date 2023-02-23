@@ -1,0 +1,31 @@
+{
+  "name": "hardhat-fund-me",
+  "author": "Oozman Barzane",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.13",
+    "@nomiclabs/hardhat-etherscan": "^3.1.6",
+    "@nomiclabs/hardhat-waffle": "^2.0.2",
+    "dotenv": "^16.0.3",
+    "ethereum-waffle": "*",
+    "ethers": "5.7.2",
+    "hardhat": "2.10.2",
+    "hardhat-deploy": "^0.11.23",
+    "hardhat-etherscan": "^1.0.1",
+    "hardhat-gas-reporter": "^1.0.9",
+    "hardhat-waffle": "^0.0.1-security",
+    "solhint": "^3.3.8",
+    "solidity-coverage": "0.7.20"
+  },
+  "scripts": {
+    "test": "yarn hardhat test",
+    "test:staging": "yarn hardhat test --network goerli",
+    "lint": "yarn solhint 'contracts/*.sol'",
+    "lint:fix": "yarn solhint 'contracts/*.sol' --fix",
+    "format": "yarn prettier --write .",
+    "coverage": "yarn hardhat coverage"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.6.1"
+  }
+}
